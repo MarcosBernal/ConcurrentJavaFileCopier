@@ -16,7 +16,8 @@ import java.security.NoSuchAlgorithmException;
  *  <p>
  *  (i.e in ubuntu "/home/marcos/Dropbox/UNS Nice/Parallelism/Practical LABs/tp2/DataSet/Original Data")
  *    
- *  @author  Marcos Bernal   
+ *  @author  Marcos Bernal
+ *  @author  Lokesh Gupta   
  */
 public class Exo2 {
 
@@ -70,6 +71,8 @@ public class Exo2 {
 		System.out.println("SHA COPIED Value: " + getFilesChecksum(shaDigest,files));
 	}
 	
+	//Partially modified from 
+	//http://howtodoinjava.com/core-java/io/how-to-generate-sha-or-md5-file-checksum-hash-in-java/
 	private static String getFilesChecksum(MessageDigest digest, File[] files) throws IOException
 	{
 		sortingFilesBySize(files);
